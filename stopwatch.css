@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(65, 77, 44);
+    
+}
+h1{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main-div{
+    
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    /* width: 100%; */
+    /* border: 1px solid black; */
+    /* border-radius: 400px; */
+    /* background-color: aqua; */
+}
+.time{
+    /* border: 1px solid red; */
+    height: 35px;
+    padding: 50px 20px ;
+    border-radius: 70%;
+    width: 90px;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: unaiz;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes unaiz{
+    0%{
+        box-shadow:0px 0px 32px -12px black;
+    }
+    50%{
+        box-shadow:0px 0px 32px 3px black;
+    }
+    100%{
+        box-shadow:0px 0px 32px -12px black;
+
+    }
+}
+
+span{
+    font-size: 25px;
+
+}
+.buttons{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px 10px 10px 10px; */
+}
+.btn-start{
+    margin-right: 10px;
+    padding: 6px 15px;
+    border-radius: 4px;
+    border: none;
+    color: rgb(236, 225, 225);
+    background-color: rgb(15, 30, 31);
+    /* width: 55px; */
+    /* height: 25px; */
+    font-size: 12px;
+}
+
+.btn-stop{
+    margin-right: 10px;
+    padding: 6px 15px;
+    border-radius: 4px;
+    border: none;
+    color: rgb(236, 225, 225);
+    background-color: rgb(15, 30, 31);
+    font-size: 12px;
+
+
+}
+
+.btn-reset{
+    padding: 6px 15px;
+    border-radius: 4px;
+    border: none;
+    color: rgb(236, 225, 225);
+    background-color: rgb(15, 30, 31);
+    font-size: 12px;
+
+
+}
+button:hover{
+    cursor: pointer;
+    transition:all .3s ease;
+    background-color:rgb(44, 99, 99)
+}
